@@ -64,6 +64,7 @@ Users can input their movie reviews through the web interface, and the model wil
 
 <!-- CONTACT -->
 ## 📬 Contact
+
 For any feedback, suggestions, or collaborations, feel free to reach out:
 
 📧 Email: jyothishankarappa96@gmail.com
