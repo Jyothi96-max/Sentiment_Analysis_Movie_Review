@@ -1,11 +1,6 @@
 <!-- PROJECT TITLE -->
 <h1 align="center">🎬 Movie Reviews Sentiment Analysis Web App 🎭</h1>
 
-<!-- HEADER IMAGE -->
-<p align="center">
-  <img src="Images/Movies_Header.jpg" alt="Movie Sentiment Analysis Banner"/>
-</p>
-
 ---
 
 <!-- PROJECT DESCRIPTION -->
@@ -46,5 +41,3 @@ Users can input their movie reviews through the web interface, and the model wil
 
 ---
 
-<!-- PROJECT STRUCTURE -->
-## 🗂️ Project Structure
