@@ -51,10 +51,8 @@ Users can input their movie reviews through the web interface, and the model wil
 
 2.Create a virtual environment
   python -m venv venv
-  venv\Scripts\activate  # On Windows
-  # or
-  source venv/bin/activate  # On Mac/Linux
-
+  venv\Scripts\activate 
+  
 3.Install all dependencies
   pip install -r requirements.txt
   
