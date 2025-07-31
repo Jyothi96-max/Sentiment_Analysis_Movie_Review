@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<section style="background: #ffffff; padding: 2rem; border-radius: 8px; box-shadow: 0 0 10px #ccc;">
+
+    <h2 style="color: #05603a;">🎬 About the Movie Review Sentiment Analysis Project</h2>
+
+    <p>
+        This web-based sentiment analysis system allows users to input a movie review and classify it as 
+        <strong style="color:green;">Positive</strong> or <strong style="color:red;">Negative</strong> using Machine Learning and NLP techniques.
+    </p>
+
+    <div style="background-color: #eafaf1; padding: 1rem; border-left: 5px solid #05603a; margin: 1.5rem 0;">
+        <h3>🎯 Project Objective</h3>
+        <p>
+            To analyze user-generated movie reviews using three different Naive Bayes models and compare their performance,
+            providing real-time predictions through a user-friendly interface.
+        </p>
+    </div>
+
+    <h3>📁 Dataset</h3>
+    <p>
+        We use the <strong>IMDB Movie Reviews dataset</strong>, which includes thousands of labeled positive and negative reviews.
+        It is one of the most commonly used datasets in NLP tasks.
+    </p>
+
+    <h3>🧹 Preprocessing Steps</h3>
+    <ul>
+        <li>🔠 <strong>Tokenization</strong>: Breaking text into individual words</li>
+        <li>🧽 <strong>Stopword Removal</strong>: Removing common, meaningless words like "is", "the", etc.</li>
+        <li>🌱 <strong>Stemming</strong>: Reducing words to their root forms (e.g., "running" → "run")</li>
+        <li>📊 <strong>Vectorization</strong>: Converting text into numerical vectors using Bag of Words</li>
+    </ul>
+
+    <h3>🧠 Machine Learning Models</h3>
+    <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+        <div><strong>🟩 Bernoulli Naive Bayes</strong> – Ideal for binary data (word presence)</div>
+        <div><strong>🟨 Multinomial Naive Bayes</strong> – Performs well with word frequency</div>
+        <div><strong>🟥 Gaussian Naive Bayes</strong> – Assumes continuous distribution (less suited for text)</div>
+    </div>
+
+    <h3>⚙️ How It Works</h3>
+    <ol>
+        <li>The user enters a review on the website.</li>
+        <li>Selects one of the available models (BNB, MNB, GNB).</li>
+        <li>The input is cleaned, processed, and vectorized using the trained pipeline.</li>
+        <li>The selected model predicts the sentiment.</li>
+        <li>The result is displayed with a confidence score.</li>
+    </ol>
+
+    <h3>💻 Technologies Used</h3>
+    <ul>
+        <li>🔧 <strong>Flask</strong> for backend web routing</li>
+        <li>📚 <strong>NLTK</strong> and <strong>Scikit-learn</strong> for NLP and ML</li>
+        <li>🎨 <strong>HTML + CSS (with Flexbox)</strong> for UI design</li>
+    </ul>
+
+    <div style="background-color: #f5f5f5; padding: 1rem; border-left: 5px solid #05686f; margin-top: 2rem;">
+        <h3>🔍 Why This Project?</h3>
+        <p>
+            This project showcases the complete machine learning pipeline—from data preprocessing and model training to deployment.
+            It's useful for students and developers learning NLP and real-world sentiment analysis.
+        </p>
+    </div>
+
+</section>
+{% endblock %}

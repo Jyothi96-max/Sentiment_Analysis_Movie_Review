@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% block content %}
+<section>
+    <h2>Enter your Movie Review</h2>
+    <form method="POST" action="/predict">
+        <textarea name="review" placeholder="Type your review here..." required></textarea>
+        <br>
+        <label for="model">Choose Model:</label>
+        <select name="model" required>
+            <option value="BernoulliNB">Bernoulli Naive Bayes</option>
+            <option value="MultinomialNB">Multinomial Naive Bayes</option>
+            <option value="GaussianNB">Gaussian Naive Bayes</option>
+        </select>
+        <br><br>
+        <button type="submit" >Predict Sentiment</button>
+    </form>
+
+    {% if prediction %}
+    <div class="result">
+        <h3>Review:</h3>
+        <p>{{ review }}</p>
+        <h3>Model Used:</h3>
+        <p>{{ selected_model }}</p>
+        <h3>Predicted Sentiment:</h3>
+        <p class="sentiment">{{ prediction }}</p>
+    </div>
+    {% endif %}
+</section>
+{% endblock %}
