@@ -49,25 +49,24 @@ Users can input their movie reviews through the web interface, and the model wil
    git clone https://github.com/YOUR-USERNAME/YOUR-REPO-NAME.git
    cd YOUR-REPO-NAME
 
-2.Create a virtual environment
+2. **Create a virtual environment**
   python -m venv venv
   venv\Scripts\activate 
   
-3.Install all dependencies
+3. **Install all dependencies**
   pip install -r requirements.txt
   
-4.Run the Flask web app
+4. **Run the Flask web app**
   python app.py
   
   Open in browser
   Go to http://127.0.0.1:5000 in your browser to use the web interface.
 
 <!-- CONTACT -->
-📬 Contact
+## 📬 Contact
 For any feedback, suggestions, or collaborations, feel free to reach out:
 
 📧 Email: jyothishankarappa96@gmail.com
 
 💼 LinkedIn: https://www.linkedin.com/in/jyothi-s-b6b8b12a5
 
-🌐 GitHub: Your GitHub
